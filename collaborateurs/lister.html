@@ -26,25 +26,23 @@
     <div class="row col-lg-3 offset-lg-9"><a href="/collaborateurs/nouveau.html"><button type="button" class="btn btn-primary">Ajouter un collaborateur</button></a></div>
     <div class="row offset-lg-1"><h1>Les collaborateurs</h1></div>
     <form action="">
-      <div class="form-group row offset-lg-2">
-        <label class="col-form-label">Rechercher un nom ou un prénom qui commence par :</label>
-        <div class="col-lg-3 offset-lg-1">
+      <div class="form-group row offset-lg-1">
+        <label class="col-form-label col-lg-3">Rechercher un nom ou un prénom qui commence par :</label>
+        <div class="col-lg-2">
           <input type="text" class="form-control" id="nom"/>
         </div>
-        <div class="col-lg-2">
+        <div>
           <button type="button" class="btn btn-primary">Rechercher</button>
         </div>
-        <div class="form-check">
+        <div class="form-check offset-lg-1">
           <label class="form-check-label">
             <input class="form-check-input" type="checkbox"> Voir les collaborateurs désactivés
           </label>
         </div>
       </div>
-      <div class="form-group row offset-lg-2">
-        <div>
-          <label class="col-form-label">Filtrer par département :</label>
-        </div>
-        <div class="col-lg-3 offset-lg-2">
+      <div class="form-group row offset-lg-1">
+          <label class="col-form-label col-lg-3">Filtrer par département :</label>
+        <div class="col-lg-2">
           <select class="form-control" id="exampleFormControlSelect1">
             <option>Tous</option>
             <option>Comptabilité</option>
@@ -55,12 +53,27 @@
       </div>
 
     </form>
+<div class="card-deck">
+  <div class="card col-lg-2" style="width: 20rem;">
+    <img class="card-img-top" src="..." alt="Photo collaborateur">
+    <div class="card-block">
+      <h4 class="card-title">Nom prénom</h4>
+<div class="container-fluid">
+      <label class="row col-lg-4">Fonction</label><label>Dev</label>
+      <label class="card-text row col-lg-1">Département</label><label>Informatique</label>
+      <label class="card-text row col-lg-1">Email</label><label>prenom.nom@email.com</label>
+      <label class="card-text row col-lg-1">Téléphone</label><label>06060606</label>
+      <a href="#" class="btn btn-primary">Editer</a>
+    </div>
+    </div>
+  </div>
+</div>
 
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </div>
 </body>
 </html>
