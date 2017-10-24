@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Ajout d'un collaborateur</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/log.html">Log </a>
+        <a class="nav-item nav-link active" href="/collaborateurs/lister.html">Collaborateurs<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/statistique.html">Statistique</a>
+        <a class="nav-item nav-link" href="/activites.html">Activités</a>
+      </div>
+    </div>
+  </nav>
+  <div class="row"><h1>Nouveau Collaborateur</h1></div>
+  <form>
+    <div class="form-group row">
+      <label for="nom" class="col-lg-3 col-form-label">Nom</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" id="nom"/>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="prenom" class="col-lg-3 col-form-label">Prénom</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" id="prenom"/>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="date" class="col-lg-3 col-form-label">Date de naissance</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" id="date"/>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="adresse" class="col-lg-3 col-form-label">Adresse</label>
+      <div class="col-lg-6">
+        <textarea class="form-control" id="adresse" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="numsecu" class="col-lg-3 col-form-label">Numéro de sécurité sociale</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" id="numsecu"/>
+      </div>
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary col-lg-1 offset-lg-8">Créer</button>
+    </div>
+
+  </form>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
