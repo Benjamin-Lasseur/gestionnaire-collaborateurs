@@ -11,7 +11,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/scripts/nouveau.js"></script>
+  <script type="text/javascript" src="/scripts/nouveau.js"></script>
+  </script>
 
 </head>
 <body class="container-fluid">
@@ -32,39 +33,87 @@
       <div class="col-lg-6">
         <input type="text" class="form-control" id="nom"/>
         <div class="invalid-feedback">
-        Veuillez rentrer un nom.
-      </div>
+          Veuillez rentrer un nom.
+        </div>
       </div>
     </div>
     <div class="form-group row">
       <label for="prenom" class="col-lg-3 col-form-label">Prénom</label>
       <div class="col-lg-6">
         <input type="text" class="form-control" id="prenom"/>
+        <div class="invalid-feedback">
+          Veuillez rentrer un prenom.
+        </div>
       </div>
     </div>
     <div class="form-group row">
-      <label for="date" class="col-lg-3 col-form-label">Date de naissance</label>
+      <label for="anniversaire" class="col-lg-3 col-form-label">Date de naissance</label>
       <div class="col-lg-6">
-        <input type="text" class="form-control" id="date"/>
+        <input type="date" class="form-control" id="anniversaire"/>
+        <div class="invalid-feedback">
+          Veuillez entrer une date.
+        </div>
       </div>
     </div>
     <div class="form-group row">
       <label for="adresse" class="col-lg-3 col-form-label">Adresse</label>
       <div class="col-lg-6">
         <textarea class="form-control" id="adresse" rows="3"></textarea>
+        <div class="invalid-feedback">
+          Veuillez renseigner une adresse.
+        </div>
       </div>
     </div>
     <div class="form-group row">
       <label for="numsecu" class="col-lg-3 col-form-label">Numéro de sécurité sociale</label>
       <div class="col-lg-6">
         <input type="text" class="form-control" id="numsecu"/>
+        <div class="invalid-feedback">
+          Veuillez entrer les 13 chiffres composant votre numéro de sécurité social.
+        </div>
       </div>
     </div>
     <div class="form-group row">
-        <input id="bouttonCreer" type="button" class="btn btn-primary col-lg-1 offset-lg-8" value="Créer"></input>
+      <input id="bouttonCreer" type="button" class="btn btn-primary col-lg-1 offset-lg-8" value="Créer"></input>
     </div>
-
   </form>
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content container">
+        <div class="modal-header">
+          <h4 class="modal-title">Création d'un collaborateur</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <label>Vous êtes sur le point de créer un collaborateur</label>
+          </div>
+          <div class="row">
+            <label class="col-lg-6">Nom</label><label id="labelnom"></label>
+          </div>
+          <div class="row">
+            <label class="col-lg-6">Prenom</label><label id="labelprenom"></label>
+          </div>
+          <div class="row">
+            <label class="col-lg-6">Date de naissance</label><label id="labelannivesaire"></label>
+          </div>
+          <div class="row">
+            <label class="col-lg-6">Adresse</label><label id="labeladresse"></label>
+          </div>
+          <div class="row">
+            <label class="col-lg-6">Numéro de sécurité social</label><label id="labelnumsecu"></label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Créer</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
